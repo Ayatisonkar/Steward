@@ -1,0 +1,23 @@
+import 'package:equatable/equatable.dart';
+import 'package:Steward_flutter/models/models.dart';
+
+abstract class TransactionSummaryState extends Equatable {
+  const TransactionSummaryState();
+
+  @override
+  List<Object> get props => ([]);
+}
+
+class TransactionSummaryEmpty extends TransactionSummaryState {}
+
+class TransactionSummaryLoading extends TransactionSummaryState {}
+
+class TransactionSummaryLoaded extends TransactionSummaryState {
+  final TransactionSummary summary;
+
+  const TransactionSummaryLoaded({required this.summary});
+  @override
+  List<Object> get props => ([summary]);
+}
+
+class TransactionSummaryError extends TransactionSummaryState {}
