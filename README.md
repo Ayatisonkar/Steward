@@ -1,2 +1,2 @@
 #Steward App
-Your finance,our expertise!!
+Your finance,our expertise.
